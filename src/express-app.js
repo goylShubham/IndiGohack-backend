@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 // const { customer, products, shopping } = require('./api');
 const HandleErrors = require('./utils/error-handler');
-const { user } = require('./api');
+const { user, guardian } = require('./api');
 
 
 module.exports = async (app) => {
@@ -14,7 +14,7 @@ module.exports = async (app) => {
 
     //api
     user(app)
-    // products(app);
+    guardian(app)
     // shopping(app);
 
     // error handling
