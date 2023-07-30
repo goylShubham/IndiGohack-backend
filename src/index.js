@@ -10,6 +10,10 @@ const StartServer = async () => {
 
     await expressApp(app);
 
+    app.get("/", (req, res) => {
+        res.send("Hello Indigo")
+    })
+
     app.listen(PORT, () => {
         console.log(`listening to port ${PORT}`);
     }).on("error", (err) => {

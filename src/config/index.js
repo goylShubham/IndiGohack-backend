@@ -8,13 +8,13 @@ if (process.env.NODE_ENV !== "prod") {
 }
 
 module.exports = {
-    PORT: process.env.PORT,
+    PORT: 8000,
     DATABASE: {
-        HOST: process.env.DB_HOST,
-        USER: process.env.DB_USER,
-        PWD: process.env.DB_PWD,
-        NAME: process.env.DB_NAME,
-        DIALECT: process.env.DB_DIALECT,
+        HOST: '10.128.6.83',
+        USER: 'mysql',
+        PWD: 'password',
+        NAME: 'sampledb',
+        DIALECT: 'mysql'
     },
-    APP_SECRET: process.env.APP_SECRET,
+    APP_SECRET: 'indigohack_backend',
 };
