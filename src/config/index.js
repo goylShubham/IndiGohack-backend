@@ -8,7 +8,7 @@ if (process.env.NODE_ENV !== "prod") {
 }
 
 module.exports = {
-    PORT: 8000,
+    PORT: 8080,
     DATABASE: {
         HOST: '10.128.6.83',
         USER: 'mysql',
